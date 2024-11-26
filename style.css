@@ -1,15 +1,21 @@
-#heading1{
+#heading1 {
     text-align: center;
     text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
-#uob-h1{
+
+#uob-h1 {
     text-transform: none;
+    color: #007BFF;
 }
+
 table {
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     border-collapse: collapse;
     width: 95%;
     margin: 0 auto;
+    overflow-x: auto;
 }
 
 td,
@@ -20,5 +26,35 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    #heading1 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    td,
+    th {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #heading1 {
+        font-size: 1.2rem;
+    }
+
+    td,
+    th {
+        padding: 4px;
+        font-size: 0.8rem;
+    }
 }
